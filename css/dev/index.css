@@ -1,63 +1,63 @@
 * {
-	padding: 0rem;
-	margin: 0rem;
-	border: 0rem;
+  padding: 0rem;
+  margin: 0rem;
+  border: 0rem;
 }
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 *::before,
 *::after {
-	display: inline-block;
+  display: inline-block;
 }
 html,
 body {
-	height: 100%;
+  height: 100%;
 }
 body {
-	line-height: 1;
-	scrollbar-gutter: stable;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  scrollbar-gutter: stable;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 input,
 button,
 textarea {
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
-	color: inherit;
-	background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
 }
 input,
 textarea {
-	width: 100%;
+  width: 100%;
 }
 label {
-	display: inline-block;
+  display: inline-block;
 }
 button,
 select,
 option {
-	cursor: pointer;
+  cursor: pointer;
 }
 a {
-	display: inline-block;
-	color: inherit;
-	text-decoration: none;
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
 }
 ul li {
-	list-style: none;
+  list-style: none;
 }
 img {
-	max-width: 100%;
-	height: auto;
-	vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
 h1,
 h2,
@@ -65,11 +65,15 @@ h3,
 h4,
 h5,
 h6 {
-	font-weight: inherit;
-	font-size: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }
 address {
-	font-style: normal;
+  font-style: normal;
+}
+picture {
+  display: block;
+  line-height: 0;
 }
 @font-face { 
 	font-family: "iconfont"; 
@@ -613,6 +617,9 @@ body {
 }
 .item-about__text {
   max-width: 13rem;
+}
+.item-about__line {
+  height: 0.0625rem;
 }
 /*#endregion*/
 /*#region services*/
@@ -1444,6 +1451,13 @@ body {
   }
   .portfolio__head {
     flex-direction: row;
+  }
+}
+
+@media (any-hover: none) and (min-width: 47.99875em) {
+  .card-services {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(7.5rem);
   }
 }
 
@@ -2309,10 +2323,6 @@ body {
 }
 
 @media (any-hover: none) {
-  .card-services {
-    background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(7.5rem);
-  }
   .card-services__number {
     opacity: 1;
   }
