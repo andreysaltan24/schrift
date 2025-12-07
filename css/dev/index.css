@@ -438,7 +438,7 @@ body {
   text-transform: uppercase;
   letter-spacing: -4%;
   line-height: 100%;
-  transition: background 0.45s cubic-bezier(0.3, 0.7, 0.4, 1);
+  transition: background 0.75s cubic-bezier(0.3, 0.7, 0.4, 1);
 }
 .button--fw {
   width: 100%;
@@ -461,7 +461,6 @@ body {
   pointer-events: none;
 }
 .hero__shadow-main {
-  display: none;
   position: absolute;
 }
 .hero__shadow-main {
@@ -1085,10 +1084,10 @@ body {
     gap: 2.25rem;
   }
   .card-services {
-    padding-block: 1.5625rem;
+    padding-block: 0.3125rem;
   }
   .card-services {
-    padding-inline: 2.1875rem;
+    padding-inline: 0.3125rem;
   }
   .card-services__number {
     margin-bottom: 1.5rem;
@@ -1259,10 +1258,10 @@ body {
     gap: clamp( 2.25rem , 1.8761682243rem  +  1.8691588785vw , 3.5rem );
   }
   .card-services {
-    padding-block: clamp( 1.5625rem , 1.0765186915875rem  +  2.4299065421vw , 3.1875rem );
+    padding-block: clamp( 0.3125rem , -0.5473130841125rem  +  4.2990654206vw , 3.1875rem );
   }
   .card-services {
-    padding-inline: clamp( 2.1875rem , 1.66413551401875rem  +  2.6168224299vw , 3.9375rem );
+    padding-inline: clamp( 0.3125rem , -0.77161214953125rem  +  5.4205607477vw , 3.9375rem );
   }
   .card-services__number {
     margin-bottom: clamp( 1.5rem , 1.05140186915625rem  +  2.2429906542vw , 3rem );
@@ -1374,9 +1373,6 @@ body {
     display: inline-block;
   }
   .hero__shadow-right {
-    display: inline-block;
-  }
-  .hero__shadow-main {
     display: inline-block;
   }
   .hero__shadow-left {
